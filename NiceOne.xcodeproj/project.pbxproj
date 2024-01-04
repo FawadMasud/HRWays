@@ -1,0 +1,1054 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43AEE0A5CF1ADC30E3496E38 /* Pods_NiceOneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F10F125516FB4ADCE99B87C /* Pods_NiceOneTests.framework */; };
+		49DE86034890F20962390C6A /* Pods_NiceOne_NiceOneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3A7BA0E45D542F5A607CA /* Pods_NiceOne_NiceOneUITests.framework */; };
+		7EC5E0A0E99C5E7307B258D6 /* Pods_NiceOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018959A9E0A70FCBD4F5DA07 /* Pods_NiceOne.framework */; };
+		91661C8F2B44811F00BE1B5E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C8E2B44811F00BE1B5E /* Fonts.swift */; };
+		91661C912B4491F300BE1B5E /* CartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91661C902B4491F300BE1B5E /* CartData.json */; };
+		91661C9D2B4492CB00BE1B5E /* Option_value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C922B4492CB00BE1B5E /* Option_value.swift */; };
+		91661C9E2B4492CB00BE1B5E /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C932B4492CB00BE1B5E /* CartData.swift */; };
+		91661C9F2B4492CB00BE1B5E /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C942B4492CB00BE1B5E /* Cart.swift */; };
+		91661CA02B4492CB00BE1B5E /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C952B4492CB00BE1B5E /* Ad.swift */; };
+		91661CA12B4492CB00BE1B5E /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C962B4492CB00BE1B5E /* Products.swift */; };
+		91661CA22B4492CB00BE1B5E /* Model_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C972B4492CB00BE1B5E /* Model_Base.swift */; };
+		91661CA32B4492CB00BE1B5E /* Recommended_products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C982B4492CB00BE1B5E /* Recommended_products.swift */; };
+		91661CA42B4492CB00BE1B5E /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C992B4492CB00BE1B5E /* Special.swift */; };
+		91661CA52B4492CB00BE1B5E /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C9A2B4492CB00BE1B5E /* Totals.swift */; };
+		91661CA62B4492CB00BE1B5E /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C9B2B4492CB00BE1B5E /* Options.swift */; };
+		91661CA72B4492CB00BE1B5E /* Category_hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C9C2B4492CB00BE1B5E /* Category_hierarchy.swift */; };
+		91661CA92B45253500BE1B5E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661CA82B45253500BE1B5E /* CartCell.swift */; };
+		919A2CA22B42C0480074CB66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A2CA12B42C0480074CB66 /* AppDelegate.swift */; };
+		919A2CA42B42C0480074CB66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A2CA32B42C0480074CB66 /* SceneDelegate.swift */; };
+		919A2CA62B42C0480074CB66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A2CA52B42C0480074CB66 /* ViewController.swift */; };
+		919A2CAB2B42C0490074CB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919A2CAA2B42C0490074CB66 /* Assets.xcassets */; };
+		919A2CAE2B42C0490074CB66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A2CAC2B42C0490074CB66 /* LaunchScreen.storyboard */; };
+		919A2CB92B42C0490074CB66 /* NiceOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A2CB82B42C0490074CB66 /* NiceOneTests.swift */; };
+		919A2CC32B42C0490074CB66 /* NiceOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A2CC22B42C0490074CB66 /* NiceOneUITests.swift */; };
+		919A2CC52B42C0490074CB66 /* NiceOneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A2CC42B42C0490074CB66 /* NiceOneUITestsLaunchTests.swift */; };
+		919A2CD32B42C4A80074CB66 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A2CD22B42C4A80074CB66 /* TabbarController.swift */; };
+		91CC7F542B456A7300355469 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC7F532B456A7300355469 /* Label.swift */; };
+		91CC7F562B45821800355469 /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC7F552B45821800355469 /* SuggestionCell.swift */; };
+		91CC7F582B45DD1000355469 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC7F572B45DD1000355469 /* CustomCollectionView.swift */; };
+		91CC7F5B2B467E2C00355469 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC7F5A2B467E2C00355469 /* Webservice.swift */; };
+		91DECEB72B42CD1700226E81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEB62B42CD1700226E81 /* HomeViewController.swift */; };
+		91DECEBB2B42CDFD00226E81 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEBA2B42CDFD00226E81 /* ProductViewController.swift */; };
+		91DECEBF2B42CE6100226E81 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEBE2B42CE6100226E81 /* TagsViewController.swift */; };
+		91DECEC32B42CEA700226E81 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEC22B42CEA700226E81 /* CartViewController.swift */; };
+		91DECEC72B42D6EF00226E81 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEC62B42D6EF00226E81 /* ProfileViewController.swift */; };
+		91DECEC92B42DFED00226E81 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEC82B42DFED00226E81 /* HomeView.swift */; };
+		91DECECB2B42E29B00226E81 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECECA2B42E29B00226E81 /* TagsView.swift */; };
+		91DECECD2B42E30100226E81 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECECC2B42E30100226E81 /* ProductView.swift */; };
+		91DECECF2B42E47900226E81 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECECE2B42E47900226E81 /* CartView.swift */; };
+		91DECED12B42E4DD00226E81 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECED02B42E4DD00226E81 /* ProfileView.swift */; };
+		91DECED52B43DCDB00226E81 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECED42B43DCDB00226E81 /* HomeViewModel.swift */; };
+		91DECEDF2B44121300226E81 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEDE2B44121300226E81 /* Image.swift */; };
+		91DECEE42B4421D000226E81 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEE32B4421D000226E81 /* View.swift */; };
+		91DECEE62B44646200226E81 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DECEE52B44646200226E81 /* Colors.swift */; };
+		91DECEED2B447C4300226E81 /* DIN Next LT W23 Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91DECEEC2B447B2D00226E81 /* DIN Next LT W23 Bold.ttf */; };
+		91DECEEE2B447C4300226E81 /* DIN Next LT W23 Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91DECEEA2B447B2D00226E81 /* DIN Next LT W23 Heavy.ttf */; };
+		91DECEEF2B447C4300226E81 /* DIN Next LT W23 Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91DECEE82B447B2D00226E81 /* DIN Next LT W23 Light.ttf */; };
+		91DECEF02B447C4300226E81 /* DIN Next LT W23 Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91DECEEB2B447B2D00226E81 /* DIN Next LT W23 Medium.ttf */; };
+		91DECEF12B447C4300226E81 /* DIN Next LT W23 Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91DECEE92B447B2D00226E81 /* DIN Next LT W23 Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		919A2CB52B42C0490074CB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 919A2C962B42C0480074CB66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 919A2C9D2B42C0480074CB66;
+			remoteInfo = NiceOne;
+		};
+		919A2CBF2B42C0490074CB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 919A2C962B42C0480074CB66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 919A2C9D2B42C0480074CB66;
+			remoteInfo = NiceOne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018959A9E0A70FCBD4F5DA07 /* Pods_NiceOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB91F30B9C23ABDDB119B87 /* Pods-NiceOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOneTests.release.xcconfig"; path = "Target Support Files/Pods-NiceOneTests/Pods-NiceOneTests.release.xcconfig"; sourceTree = "<group>"; };
+		28B3A7BA0E45D542F5A607CA /* Pods_NiceOne_NiceOneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceOne_NiceOneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F10F125516FB4ADCE99B87C /* Pods_NiceOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		707FDBB56B251260DB7E5D06 /* Pods-NiceOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOne.debug.xcconfig"; path = "Target Support Files/Pods-NiceOne/Pods-NiceOne.debug.xcconfig"; sourceTree = "<group>"; };
+		7592AF993974F73AA86CF122 /* Pods-NiceOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOneTests.debug.xcconfig"; path = "Target Support Files/Pods-NiceOneTests/Pods-NiceOneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AF00E5085D73EA478AAA8F3 /* Pods-NiceOne-NiceOneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOne-NiceOneUITests.release.xcconfig"; path = "Target Support Files/Pods-NiceOne-NiceOneUITests/Pods-NiceOne-NiceOneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F25183C53C319AA50861ED0 /* Pods-NiceOne-NiceOneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOne-NiceOneUITests.debug.xcconfig"; path = "Target Support Files/Pods-NiceOne-NiceOneUITests/Pods-NiceOne-NiceOneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91661C8E2B44811F00BE1B5E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		91661C902B4491F300BE1B5E /* CartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CartData.json; sourceTree = "<group>"; };
+		91661C922B4492CB00BE1B5E /* Option_value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option_value.swift; sourceTree = "<group>"; };
+		91661C932B4492CB00BE1B5E /* CartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
+		91661C942B4492CB00BE1B5E /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		91661C952B4492CB00BE1B5E /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		91661C962B4492CB00BE1B5E /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		91661C972B4492CB00BE1B5E /* Model_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model_Base.swift; sourceTree = "<group>"; };
+		91661C982B4492CB00BE1B5E /* Recommended_products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommended_products.swift; sourceTree = "<group>"; };
+		91661C992B4492CB00BE1B5E /* Special.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Special.swift; sourceTree = "<group>"; };
+		91661C9A2B4492CB00BE1B5E /* Totals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Totals.swift; sourceTree = "<group>"; };
+		91661C9B2B4492CB00BE1B5E /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		91661C9C2B4492CB00BE1B5E /* Category_hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category_hierarchy.swift; sourceTree = "<group>"; };
+		91661CA82B45253500BE1B5E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		919A2C9E2B42C0480074CB66 /* NiceOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		919A2CA12B42C0480074CB66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		919A2CA32B42C0480074CB66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		919A2CA52B42C0480074CB66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		919A2CAA2B42C0490074CB66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919A2CAD2B42C0490074CB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		919A2CAF2B42C0490074CB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919A2CB42B42C0490074CB66 /* NiceOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919A2CB82B42C0490074CB66 /* NiceOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceOneTests.swift; sourceTree = "<group>"; };
+		919A2CBE2B42C0490074CB66 /* NiceOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919A2CC22B42C0490074CB66 /* NiceOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceOneUITests.swift; sourceTree = "<group>"; };
+		919A2CC42B42C0490074CB66 /* NiceOneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceOneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		919A2CD22B42C4A80074CB66 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		91CC7F532B456A7300355469 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		91CC7F552B45821800355469 /* SuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
+		91CC7F572B45DD1000355469 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		91CC7F5A2B467E2C00355469 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		91DECEB62B42CD1700226E81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		91DECEBA2B42CDFD00226E81 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		91DECEBE2B42CE6100226E81 /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		91DECEC22B42CEA700226E81 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		91DECEC62B42D6EF00226E81 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		91DECEC82B42DFED00226E81 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		91DECECA2B42E29B00226E81 /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
+		91DECECC2B42E30100226E81 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		91DECECE2B42E47900226E81 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		91DECED02B42E4DD00226E81 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		91DECED42B43DCDB00226E81 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		91DECEDE2B44121300226E81 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		91DECEE32B4421D000226E81 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		91DECEE52B44646200226E81 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		91DECEE82B447B2D00226E81 /* DIN Next LT W23 Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Next LT W23 Light.ttf"; sourceTree = "<group>"; };
+		91DECEE92B447B2D00226E81 /* DIN Next LT W23 Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Next LT W23 Regular.ttf"; sourceTree = "<group>"; };
+		91DECEEA2B447B2D00226E81 /* DIN Next LT W23 Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Next LT W23 Heavy.ttf"; sourceTree = "<group>"; };
+		91DECEEB2B447B2D00226E81 /* DIN Next LT W23 Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Next LT W23 Medium.ttf"; sourceTree = "<group>"; };
+		91DECEEC2B447B2D00226E81 /* DIN Next LT W23 Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Next LT W23 Bold.ttf"; sourceTree = "<group>"; };
+		A77976FDDEB1E1E80328B970 /* Pods-NiceOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOne.release.xcconfig"; path = "Target Support Files/Pods-NiceOne/Pods-NiceOne.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		919A2C9B2B42C0480074CB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC5E0A0E99C5E7307B258D6 /* Pods_NiceOne.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A2CB12B42C0490074CB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43AEE0A5CF1ADC30E3496E38 /* Pods_NiceOneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A2CBB2B42C0490074CB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49DE86034890F20962390C6A /* Pods_NiceOne_NiceOneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FF75B0CE7D20962D39A50A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				707FDBB56B251260DB7E5D06 /* Pods-NiceOne.debug.xcconfig */,
+				A77976FDDEB1E1E80328B970 /* Pods-NiceOne.release.xcconfig */,
+				7F25183C53C319AA50861ED0 /* Pods-NiceOne-NiceOneUITests.debug.xcconfig */,
+				7AF00E5085D73EA478AAA8F3 /* Pods-NiceOne-NiceOneUITests.release.xcconfig */,
+				7592AF993974F73AA86CF122 /* Pods-NiceOneTests.debug.xcconfig */,
+				0BB91F30B9C23ABDDB119B87 /* Pods-NiceOneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		919A2C952B42C0480074CB66 = {
+			isa = PBXGroup;
+			children = (
+				919A2CA02B42C0480074CB66 /* NiceOne */,
+				919A2CB72B42C0490074CB66 /* NiceOneTests */,
+				919A2CC12B42C0490074CB66 /* NiceOneUITests */,
+				919A2C9F2B42C0480074CB66 /* Products */,
+				2FF75B0CE7D20962D39A50A3 /* Pods */,
+				A21B77CE401A443D5173D064 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		919A2C9F2B42C0480074CB66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				919A2C9E2B42C0480074CB66 /* NiceOne.app */,
+				919A2CB42B42C0490074CB66 /* NiceOneTests.xctest */,
+				919A2CBE2B42C0490074CB66 /* NiceOneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		919A2CA02B42C0480074CB66 /* NiceOne */ = {
+			isa = PBXGroup;
+			children = (
+				91DECED92B4409BD00226E81 /* Common */,
+				91DECEC42B42D6D900226E81 /* Profile */,
+				91DECEC02B42CE8100226E81 /* Cart */,
+				91DECEBC2B42CE4000226E81 /* Tags */,
+				91DECEB82B42CDD300226E81 /* Product */,
+				91DECEB22B42CCC600226E81 /* Home */,
+				919A2CD12B42C4550074CB66 /* Tabbar */,
+				919A2CA12B42C0480074CB66 /* AppDelegate.swift */,
+				919A2CA32B42C0480074CB66 /* SceneDelegate.swift */,
+				919A2CA52B42C0480074CB66 /* ViewController.swift */,
+				919A2CAA2B42C0490074CB66 /* Assets.xcassets */,
+				919A2CAC2B42C0490074CB66 /* LaunchScreen.storyboard */,
+				919A2CAF2B42C0490074CB66 /* Info.plist */,
+			);
+			path = NiceOne;
+			sourceTree = "<group>";
+		};
+		919A2CB72B42C0490074CB66 /* NiceOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				919A2CB82B42C0490074CB66 /* NiceOneTests.swift */,
+			);
+			path = NiceOneTests;
+			sourceTree = "<group>";
+		};
+		919A2CC12B42C0490074CB66 /* NiceOneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				919A2CC22B42C0490074CB66 /* NiceOneUITests.swift */,
+				919A2CC42B42C0490074CB66 /* NiceOneUITestsLaunchTests.swift */,
+			);
+			path = NiceOneUITests;
+			sourceTree = "<group>";
+		};
+		919A2CD12B42C4550074CB66 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				919A2CD22B42C4A80074CB66 /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		91CC7F592B467E1A00355469 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				91CC7F5A2B467E2C00355469 /* Webservice.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		91DECEB22B42CCC600226E81 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEB52B42CCFA00226E81 /* ViewModel */,
+				91DECEB42B42CCE300226E81 /* Model */,
+				91DECEB32B42CCD500226E81 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		91DECEB32B42CCD500226E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91DECED82B43F1F300226E81 /* Cells */,
+				91DECEB62B42CD1700226E81 /* HomeViewController.swift */,
+				91DECEC82B42DFED00226E81 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DECEB42B42CCE300226E81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91661C952B4492CB00BE1B5E /* Ad.swift */,
+				91661C942B4492CB00BE1B5E /* Cart.swift */,
+				91661C9C2B4492CB00BE1B5E /* Category_hierarchy.swift */,
+				91661C932B4492CB00BE1B5E /* CartData.swift */,
+				91661C972B4492CB00BE1B5E /* Model_Base.swift */,
+				91661C922B4492CB00BE1B5E /* Option_value.swift */,
+				91661C9B2B4492CB00BE1B5E /* Options.swift */,
+				91661C962B4492CB00BE1B5E /* Products.swift */,
+				91661C982B4492CB00BE1B5E /* Recommended_products.swift */,
+				91661C992B4492CB00BE1B5E /* Special.swift */,
+				91661C9A2B4492CB00BE1B5E /* Totals.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91DECEB52B42CCFA00226E81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91DECED42B43DCDB00226E81 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		91DECEB82B42CDD300226E81 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEB92B42CDE400226E81 /* View */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		91DECEB92B42CDE400226E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEBA2B42CDFD00226E81 /* ProductViewController.swift */,
+				91DECECC2B42E30100226E81 /* ProductView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DECEBC2B42CE4000226E81 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEBD2B42CE4F00226E81 /* View */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		91DECEBD2B42CE4F00226E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEBE2B42CE6100226E81 /* TagsViewController.swift */,
+				91DECECA2B42E29B00226E81 /* TagsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DECEC02B42CE8100226E81 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEC12B42CE9000226E81 /* View */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		91DECEC12B42CE9000226E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEC22B42CEA700226E81 /* CartViewController.swift */,
+				91DECECE2B42E47900226E81 /* CartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DECEC42B42D6D900226E81 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEC52B42D6E200226E81 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		91DECEC52B42D6E200226E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEC62B42D6EF00226E81 /* ProfileViewController.swift */,
+				91DECED02B42E4DD00226E81 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DECED82B43F1F300226E81 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				91661CA82B45253500BE1B5E /* CartCell.swift */,
+				91CC7F552B45821800355469 /* SuggestionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		91DECED92B4409BD00226E81 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				91CC7F592B467E1A00355469 /* Network */,
+				91DECEE02B44134D00226E81 /* Components */,
+				91DECEDD2B4411F700226E81 /* Design */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		91DECEDD2B4411F700226E81 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEE72B4476A200226E81 /* Font */,
+				91DECEDE2B44121300226E81 /* Image.swift */,
+				91DECEE32B4421D000226E81 /* View.swift */,
+				91DECEE52B44646200226E81 /* Colors.swift */,
+				91CC7F532B456A7300355469 /* Label.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		91DECEE02B44134D00226E81 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				91661C902B4491F300BE1B5E /* CartData.json */,
+				91CC7F572B45DD1000355469 /* CustomCollectionView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		91DECEE72B4476A200226E81 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				91DECEEC2B447B2D00226E81 /* DIN Next LT W23 Bold.ttf */,
+				91DECEEA2B447B2D00226E81 /* DIN Next LT W23 Heavy.ttf */,
+				91DECEE82B447B2D00226E81 /* DIN Next LT W23 Light.ttf */,
+				91DECEEB2B447B2D00226E81 /* DIN Next LT W23 Medium.ttf */,
+				91DECEE92B447B2D00226E81 /* DIN Next LT W23 Regular.ttf */,
+				91661C8E2B44811F00BE1B5E /* Fonts.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A21B77CE401A443D5173D064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018959A9E0A70FCBD4F5DA07 /* Pods_NiceOne.framework */,
+				28B3A7BA0E45D542F5A607CA /* Pods_NiceOne_NiceOneUITests.framework */,
+				3F10F125516FB4ADCE99B87C /* Pods_NiceOneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		919A2C9D2B42C0480074CB66 /* NiceOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919A2CC82B42C0490074CB66 /* Build configuration list for PBXNativeTarget "NiceOne" */;
+			buildPhases = (
+				877C83BD3CFCBBA76DD99152 /* [CP] Check Pods Manifest.lock */,
+				919A2C9A2B42C0480074CB66 /* Sources */,
+				919A2C9B2B42C0480074CB66 /* Frameworks */,
+				919A2C9C2B42C0480074CB66 /* Resources */,
+				67CBA2D5A915214F48F6052A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NiceOne;
+			productName = NiceOne;
+			productReference = 919A2C9E2B42C0480074CB66 /* NiceOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		919A2CB32B42C0490074CB66 /* NiceOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919A2CCB2B42C0490074CB66 /* Build configuration list for PBXNativeTarget "NiceOneTests" */;
+			buildPhases = (
+				9A936835CD262401C7065FB5 /* [CP] Check Pods Manifest.lock */,
+				919A2CB02B42C0490074CB66 /* Sources */,
+				919A2CB12B42C0490074CB66 /* Frameworks */,
+				919A2CB22B42C0490074CB66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				919A2CB62B42C0490074CB66 /* PBXTargetDependency */,
+			);
+			name = NiceOneTests;
+			productName = NiceOneTests;
+			productReference = 919A2CB42B42C0490074CB66 /* NiceOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		919A2CBD2B42C0490074CB66 /* NiceOneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919A2CCE2B42C0490074CB66 /* Build configuration list for PBXNativeTarget "NiceOneUITests" */;
+			buildPhases = (
+				70207496088929814EB5D72E /* [CP] Check Pods Manifest.lock */,
+				919A2CBA2B42C0490074CB66 /* Sources */,
+				919A2CBB2B42C0490074CB66 /* Frameworks */,
+				919A2CBC2B42C0490074CB66 /* Resources */,
+				6DF11C1BF84F54F282B01F65 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				919A2CC02B42C0490074CB66 /* PBXTargetDependency */,
+			);
+			name = NiceOneUITests;
+			productName = NiceOneUITests;
+			productReference = 919A2CBE2B42C0490074CB66 /* NiceOneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		919A2C962B42C0480074CB66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					919A2C9D2B42C0480074CB66 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					919A2CB32B42C0490074CB66 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 919A2C9D2B42C0480074CB66;
+					};
+					919A2CBD2B42C0490074CB66 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 919A2C9D2B42C0480074CB66;
+					};
+				};
+			};
+			buildConfigurationList = 919A2C992B42C0480074CB66 /* Build configuration list for PBXProject "NiceOne" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 919A2C952B42C0480074CB66;
+			productRefGroup = 919A2C9F2B42C0480074CB66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				919A2C9D2B42C0480074CB66 /* NiceOne */,
+				919A2CB32B42C0490074CB66 /* NiceOneTests */,
+				919A2CBD2B42C0490074CB66 /* NiceOneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		919A2C9C2B42C0480074CB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DECEED2B447C4300226E81 /* DIN Next LT W23 Bold.ttf in Resources */,
+				91DECEEE2B447C4300226E81 /* DIN Next LT W23 Heavy.ttf in Resources */,
+				91DECEEF2B447C4300226E81 /* DIN Next LT W23 Light.ttf in Resources */,
+				91661C912B4491F300BE1B5E /* CartData.json in Resources */,
+				91DECEF02B447C4300226E81 /* DIN Next LT W23 Medium.ttf in Resources */,
+				91DECEF12B447C4300226E81 /* DIN Next LT W23 Regular.ttf in Resources */,
+				919A2CAE2B42C0490074CB66 /* LaunchScreen.storyboard in Resources */,
+				919A2CAB2B42C0490074CB66 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A2CB22B42C0490074CB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A2CBC2B42C0490074CB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67CBA2D5A915214F48F6052A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceOne/Pods-NiceOne-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceOne/Pods-NiceOne-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NiceOne/Pods-NiceOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DF11C1BF84F54F282B01F65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceOne-NiceOneUITests/Pods-NiceOne-NiceOneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceOne-NiceOneUITests/Pods-NiceOne-NiceOneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NiceOne-NiceOneUITests/Pods-NiceOne-NiceOneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70207496088929814EB5D72E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiceOne-NiceOneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877C83BD3CFCBBA76DD99152 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiceOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A936835CD262401C7065FB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiceOneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		919A2C9A2B42C0480074CB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DECEBB2B42CDFD00226E81 /* ProductViewController.swift in Sources */,
+				91DECEDF2B44121300226E81 /* Image.swift in Sources */,
+				91661C9D2B4492CB00BE1B5E /* Option_value.swift in Sources */,
+				91DECEB72B42CD1700226E81 /* HomeViewController.swift in Sources */,
+				91DECED52B43DCDB00226E81 /* HomeViewModel.swift in Sources */,
+				91661CA32B4492CB00BE1B5E /* Recommended_products.swift in Sources */,
+				91CC7F542B456A7300355469 /* Label.swift in Sources */,
+				91DECECF2B42E47900226E81 /* CartView.swift in Sources */,
+				91CC7F5B2B467E2C00355469 /* Webservice.swift in Sources */,
+				91661CA92B45253500BE1B5E /* CartCell.swift in Sources */,
+				919A2CA62B42C0480074CB66 /* ViewController.swift in Sources */,
+				91661C9E2B4492CB00BE1B5E /* CartData.swift in Sources */,
+				91661CA22B4492CB00BE1B5E /* Model_Base.swift in Sources */,
+				91DECEC92B42DFED00226E81 /* HomeView.swift in Sources */,
+				91661C8F2B44811F00BE1B5E /* Fonts.swift in Sources */,
+				91661CA42B4492CB00BE1B5E /* Special.swift in Sources */,
+				91DECECD2B42E30100226E81 /* ProductView.swift in Sources */,
+				919A2CD32B42C4A80074CB66 /* TabbarController.swift in Sources */,
+				91CC7F582B45DD1000355469 /* CustomCollectionView.swift in Sources */,
+				91661CA72B4492CB00BE1B5E /* Category_hierarchy.swift in Sources */,
+				91CC7F562B45821800355469 /* SuggestionCell.swift in Sources */,
+				91DECEE62B44646200226E81 /* Colors.swift in Sources */,
+				91DECEC32B42CEA700226E81 /* CartViewController.swift in Sources */,
+				91661CA02B4492CB00BE1B5E /* Ad.swift in Sources */,
+				91DECEBF2B42CE6100226E81 /* TagsViewController.swift in Sources */,
+				91661C9F2B4492CB00BE1B5E /* Cart.swift in Sources */,
+				91DECEE42B4421D000226E81 /* View.swift in Sources */,
+				91DECEC72B42D6EF00226E81 /* ProfileViewController.swift in Sources */,
+				91661CA52B4492CB00BE1B5E /* Totals.swift in Sources */,
+				919A2CA22B42C0480074CB66 /* AppDelegate.swift in Sources */,
+				91DECECB2B42E29B00226E81 /* TagsView.swift in Sources */,
+				91661CA12B4492CB00BE1B5E /* Products.swift in Sources */,
+				91DECED12B42E4DD00226E81 /* ProfileView.swift in Sources */,
+				919A2CA42B42C0480074CB66 /* SceneDelegate.swift in Sources */,
+				91661CA62B4492CB00BE1B5E /* Options.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A2CB02B42C0490074CB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A2CB92B42C0490074CB66 /* NiceOneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A2CBA2B42C0490074CB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A2CC52B42C0490074CB66 /* NiceOneUITestsLaunchTests.swift in Sources */,
+				919A2CC32B42C0490074CB66 /* NiceOneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		919A2CB62B42C0490074CB66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 919A2C9D2B42C0480074CB66 /* NiceOne */;
+			targetProxy = 919A2CB52B42C0490074CB66 /* PBXContainerItemProxy */;
+		};
+		919A2CC02B42C0490074CB66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 919A2C9D2B42C0480074CB66 /* NiceOne */;
+			targetProxy = 919A2CBF2B42C0490074CB66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		919A2CAC2B42C0490074CB66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919A2CAD2B42C0490074CB66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		919A2CC62B42C0490074CB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		919A2CC72B42C0490074CB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		919A2CC92B42C0490074CB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707FDBB56B251260DB7E5D06 /* Pods-NiceOne.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NiceOne/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fawad.NiceOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919A2CCA2B42C0490074CB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77976FDDEB1E1E80328B970 /* Pods-NiceOne.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NiceOne/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fawad.NiceOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		919A2CCC2B42C0490074CB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7592AF993974F73AA86CF122 /* Pods-NiceOneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fawad.NiceOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceOne.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NiceOne";
+			};
+			name = Debug;
+		};
+		919A2CCD2B42C0490074CB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB91F30B9C23ABDDB119B87 /* Pods-NiceOneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fawad.NiceOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceOne.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NiceOne";
+			};
+			name = Release;
+		};
+		919A2CCF2B42C0490074CB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F25183C53C319AA50861ED0 /* Pods-NiceOne-NiceOneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fawad.NiceOneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NiceOne;
+			};
+			name = Debug;
+		};
+		919A2CD02B42C0490074CB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF00E5085D73EA478AAA8F3 /* Pods-NiceOne-NiceOneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fawad.NiceOneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NiceOne;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		919A2C992B42C0480074CB66 /* Build configuration list for PBXProject "NiceOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A2CC62B42C0490074CB66 /* Debug */,
+				919A2CC72B42C0490074CB66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919A2CC82B42C0490074CB66 /* Build configuration list for PBXNativeTarget "NiceOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A2CC92B42C0490074CB66 /* Debug */,
+				919A2CCA2B42C0490074CB66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919A2CCB2B42C0490074CB66 /* Build configuration list for PBXNativeTarget "NiceOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A2CCC2B42C0490074CB66 /* Debug */,
+				919A2CCD2B42C0490074CB66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919A2CCE2B42C0490074CB66 /* Build configuration list for PBXNativeTarget "NiceOneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A2CCF2B42C0490074CB66 /* Debug */,
+				919A2CD02B42C0490074CB66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 919A2C962B42C0480074CB66 /* Project object */;
+}
