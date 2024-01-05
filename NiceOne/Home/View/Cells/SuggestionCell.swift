@@ -14,7 +14,7 @@ protocol SuggestionCellDelegate: AnyObject {
     func addObjectInCart(product:Products)
 }
 
-class SuggestionCell: UICollectionViewCell {
+class SuggestionCell: UICollectionViewCell,UIGestureRecognizerDelegate {
     
     static let identifier = "CartCell"
     
@@ -43,6 +43,7 @@ class SuggestionCell: UICollectionViewCell {
         lblPrice.font = .Regular_12
         
         imgProd.sd_setImage(with: URL.init(string: data.thumb!))
+        imgProd.contentMode = .scaleAspectFill
     }
     
     func configure(){
@@ -66,10 +67,13 @@ class SuggestionCell: UICollectionViewCell {
         cornerRadius = 10
         clipsToBounds = true
         
-        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(addToCart))
+        tap.delegate = self
+        lblAdd.addGestureRecognizer(tap)
+        lblAdd.isUserInteractionEnabled = true
         
         btnAdd.setImage(UIImage(named: "addToCart"), for: .normal)
-        btnAdd.addTarget(self, action: #selector(addToCart(sender:)), for: .touchUpInside)
+        btnAdd.addTarget(self, action: #selector(addToCart), for: .touchUpInside)
         btnAdd.isUserInteractionEnabled = true
         
         lblAdd.text = "Add to cart"
@@ -88,7 +92,7 @@ class SuggestionCell: UICollectionViewCell {
         
     }
     
-    @objc func addToCart(sender:UIButton){
+    @objc func addToCart(){
         
         self.delegate?.addObjectInCart(product: product!)
     }

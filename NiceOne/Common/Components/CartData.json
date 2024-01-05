@@ -28,6 +28,7 @@
           "cross_discount": null,
           "en_name": "Derma roller 4 in 1 Kit",
           "event_price": "36.80",
+          "manufacturer": "NARS",
           "special": [
             {
               "discount_ratio": "-79%",
@@ -72,6 +73,98 @@
               "category_id": 315,
               "name": "Tools and Accessories",
               "en_name": "Tools and Accessories"
+            }
+          ]
+        },
+        {
+          "id": "5506",
+          "thumb": "https://d3e7ardzpaj3y4.cloudfront.net/image/catalog/51196388_The Dew Manizer'squad-500x500.png",
+          "price_formated": "SAR 136.85",
+          "priceWithoutCurrency": "136.85",
+          "price": "136.85",
+          "name": "theBalm The Dew Manizer's Quad Mini Liquid Highlighters",
+          "en_name": "theBalm The Dew Manizer's Quad Mini Liquid Highlighters",
+          "description": "theBalm The Dew Manizer's Quad Mini Liquid Highlighters:You will want to “dew” the time with all of these maximum capacity, liquid glow getters. The gang is united for the first time and they may be mini, but they are intense! Mary-Dew, Bonnie-Dew, Cindy-Dew (new), and Betty-Dew (new) are deceiving multitaskers, so beware - when the light strikes, people don’t know what hit them! Sized for travel, you can always have your partner in crime with you.",
+          "sku": "B1-001",
+          "isbn": "",
+          "has_option": false,
+          "category_id": 13,
+          "quantity": 446,
+          "special": [],
+          "manufacturer": "test444",
+          "is_new": false,
+          "is_exclusive": true,
+          "order": 0,
+          "score": null,
+          "event_price": "136.85",
+          "rating": null,
+          "total_reviews": null,
+          "seo_url_ar": "makeup/highlighter/liquid-highlighter/thebalm-the-dew-manizer-s-quad-mini-liquid-highlighters-n5506/",
+          "seo_url_en": "makeup/highlighter/liquid-highlighter/thebalm-the-dew-manizer-s-quad-mini-liquid-highlighters-n5506/",
+          "share_url": "https://test2.niceonesa.com/ar/makeup/highlighter/liquid-highlighter/thebalm-the-dew-manizer-s-quad-mini-liquid-highlighters-n5506/",
+          "category_hierarchy": [
+            {
+              "category_id": 13,
+              "name": "Makeup",
+              "en_name": "Makeup"
+            },
+            {
+              "category_id": 115,
+              "name": "Highlighter",
+              "en_name": "Highlighter"
+            },
+            {
+              "category_id": 182,
+              "name": "Liquid Highlighter",
+              "en_name": "Liquid Highlighter"
+            }
+          ]
+        },
+        {
+          "id": "5596",
+          "thumb": "https://d3e7ardzpaj3y4.cloudfront.net/image/catalog/product/83904994_MarbleFlatFoundationBrush-500x500.png",
+          "price_formated": "SAR 65.71",
+          "priceWithoutCurrency": "65.71",
+          "price": "65.71",
+          "name": "Marble Flat Foundation Brush",
+          "en_name": "Marble Flat Foundation Brush",
+          "description": "Marble Foundation Brush:The Flat Top Buffer is perfect for buffing in foundation, blending in powders, and applying bronzer.The durable, dense bristles offer excellent control and a full coverage application.",
+          "sku": "A1-078",
+          "isbn": "",
+          "has_option": false,
+          "category_id": 13,
+          "quantity": 6249,
+          "special": [],
+          "manufacturer": "MARBLE",
+          "is_new": false,
+          "is_exclusive": true,
+          "order": 4,
+          "score": null,
+          "event_price": "65.71",
+          "rating": 4.6,
+          "total_reviews": "35",
+          "tag": {
+            "text": "Trending",
+            "background_color": "#e30202"
+          },
+          "seo_url_ar": "makeup/brushes-amp-tools/face-brushes/marble-flat-foundation-brush-n5596/",
+          "seo_url_en": "makeup/brushes-amp-tools/face-brushes/marble-flat-foundation-brush-n5596/",
+          "share_url": "https://test2.niceonesa.com/ar/makeup/brushes-amp-tools/face-brushes/marble-flat-foundation-brush-n5596/",
+          "category_hierarchy": [
+            {
+              "category_id": 13,
+              "name": "Makeup",
+              "en_name": "Makeup"
+            },
+            {
+              "category_id": 21,
+              "name": "Brushes &amp; Tools",
+              "en_name": "Brushes &amp; Tools"
+            },
+            {
+              "category_id": 174,
+              "name": "Face Brushes",
+              "en_name": "Face Brushes"
             }
           ]
         }

@@ -7,17 +7,17 @@
 
 import Foundation
 
-protocol HomeViewModelProtocol: AnyObject {
+protocol HomeViewModelDelegate: AnyObject {
     
-    func didReceiveData()
+    func didReceiveData(cartInfo:Cart)
     func didReceiveCartProducts(products:[Products])
     func didReceiveRecommendedProducts(products:[Products])
-    func didFailToGetData()
+    func didFailToGetData(message:String)
 }
 
 final class HomeViewModel {
     
-    weak var delegate: HomeViewModelProtocol?
+    weak var delegate: HomeViewModelDelegate?
     
     var cartProducts = [Products]()
     var campaingProducts = [Products]()
@@ -26,12 +26,19 @@ final class HomeViewModel {
         
         let service = WebService()
         
-        service.getCartDataOffline(completion: {cartData,recommended,error  in
+        service.getCartDataOffline(completion: {allData,error  in
             
-            print(cartData)
+            print(allData)
             
-            self.delegate?.didReceiveCartProducts(products: cartData)
-            self.delegate?.didReceiveRecommendedProducts(products: recommended)
+            if((error) != nil)
+            {
+                self.delegate?.didFailToGetData(message: error?.localizedDescription ?? "Error")
+                return
+            }
+            
+            self.delegate?.didReceiveCartProducts(products: allData.cart?.products ?? [])
+            self.delegate?.didReceiveRecommendedProducts(products: allData.recommended_products?.products ?? [])
+            self.delegate?.didReceiveData(cartInfo: allData.cart!)
         })
     }
 }

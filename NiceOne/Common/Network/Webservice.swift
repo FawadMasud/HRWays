@@ -11,7 +11,7 @@ import UIKit
 public class WebService:NSObject{
     
     //Offline Data
-      func getCartDataOffline(completion: @escaping (_ cartData: [Products],_ recommended:[Products], _ error: Error?) -> Void) {
+      func getCartDataOffline(completion: @escaping (_ allData: CartData, _ error: Error?) -> Void) {
             
             guard let filePath = Bundle.main.url(forResource: "CartData", withExtension: "json") else {
                 return
@@ -22,11 +22,13 @@ public class WebService:NSObject{
                 let data = try Data(contentsOf: filePath)
                 let result = try JSONDecoder().decode(Model_Base.self, from: data)
                 
-                completion(result.data?.cart?.products ?? [],result.data?.recommended_products?.products ?? [],nil)
+                completion(result.data! ,nil)
                 
                
             } catch {
                 print(String(describing: error))
+                
+               // completion(Void ,error)
             }
         }
 }

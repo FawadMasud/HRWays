@@ -126,7 +126,7 @@ class CartCell: UITableViewCell {
         
         start()
         
-        lblTitle.text = data.en_name
+        lblTitle.text = data.manufacturer
         lblTitle.alpha = 0.38
         lblTitle.font = .Regular_12
         lblTitle.textColor = .black
@@ -153,6 +153,7 @@ class CartCell: UITableViewCell {
         lblCount.font = .Regular_11
         
         imgProduct.sd_setImage(with: URL.init(string: data.thumb!))
+        imgProduct.contentMode = .scaleAspectFill
         
     }
     

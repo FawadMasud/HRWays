@@ -10,6 +10,7 @@
 		43AEE0A5CF1ADC30E3496E38 /* Pods_NiceOneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F10F125516FB4ADCE99B87C /* Pods_NiceOneTests.framework */; };
 		49DE86034890F20962390C6A /* Pods_NiceOne_NiceOneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3A7BA0E45D542F5A607CA /* Pods_NiceOne_NiceOneUITests.framework */; };
 		7EC5E0A0E99C5E7307B258D6 /* Pods_NiceOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018959A9E0A70FCBD4F5DA07 /* Pods_NiceOne.framework */; };
+		910E2E0A2B48119000EF075B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E2E092B48119000EF075B /* String.swift */; };
 		91661C8F2B44811F00BE1B5E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C8E2B44811F00BE1B5E /* Fonts.swift */; };
 		91661C912B4491F300BE1B5E /* CartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91661C902B4491F300BE1B5E /* CartData.json */; };
 		91661C9D2B4492CB00BE1B5E /* Option_value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91661C922B4492CB00BE1B5E /* Option_value.swift */; };
@@ -84,6 +85,7 @@
 		7592AF993974F73AA86CF122 /* Pods-NiceOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOneTests.debug.xcconfig"; path = "Target Support Files/Pods-NiceOneTests/Pods-NiceOneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AF00E5085D73EA478AAA8F3 /* Pods-NiceOne-NiceOneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOne-NiceOneUITests.release.xcconfig"; path = "Target Support Files/Pods-NiceOne-NiceOneUITests/Pods-NiceOne-NiceOneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F25183C53C319AA50861ED0 /* Pods-NiceOne-NiceOneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceOne-NiceOneUITests.debug.xcconfig"; path = "Target Support Files/Pods-NiceOne-NiceOneUITests/Pods-NiceOne-NiceOneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		910E2E092B48119000EF075B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		91661C8E2B44811F00BE1B5E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		91661C902B4491F300BE1B5E /* CartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CartData.json; sourceTree = "<group>"; };
 		91661C922B4492CB00BE1B5E /* Option_value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option_value.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				91DECEE32B4421D000226E81 /* View.swift */,
 				91DECEE52B44646200226E81 /* Colors.swift */,
 				91CC7F532B456A7300355469 /* Label.swift */,
+				910E2E092B48119000EF075B /* String.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -704,6 +707,7 @@
 				91DECEC72B42D6EF00226E81 /* ProfileViewController.swift in Sources */,
 				91661CA52B4492CB00BE1B5E /* Totals.swift in Sources */,
 				919A2CA22B42C0480074CB66 /* AppDelegate.swift in Sources */,
+				910E2E0A2B48119000EF075B /* String.swift in Sources */,
 				91DECECB2B42E29B00226E81 /* TagsView.swift in Sources */,
 				91661CA12B4492CB00BE1B5E /* Products.swift in Sources */,
 				91DECED12B42E4DD00226E81 /* ProfileView.swift in Sources */,

@@ -94,7 +94,7 @@ class HomeView: UIView {
         btnCheckout.backgroundColor = .black
         btnCheckout.cornerRadius = 5
         btnCheckout.setTitle("Select the delivery address", for: .normal)
-       // btnCheckout.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
+        
         
         lblCheckout.text = "4 Products - SAR 549"
         lblCheckout.font = .Regular_14
@@ -110,6 +110,9 @@ class HomeView: UIView {
         topView.addSubviews(lblFreeShipping,progressView)
         customView.addSubviews(topView,imgShipping,tblCart,imgBanner,lblLike,collectionSuggestion)
     }
+    
+    
+    
     
     private func scrollViewConstraints() {
         scrollView.snp.makeConstraints { make in

@@ -7,9 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, HomeViewModelProtocol {
-    
-    
+class HomeViewController: UIViewController {
 
     let homeView = HomeView()
     
@@ -24,7 +22,9 @@ class HomeViewController: UIViewController, HomeViewModelProtocol {
         view = homeView
         self.title = "Home"
         view.isUserInteractionEnabled = true
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.init(named: "share"), style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.init(named: "share"), style: .plain, target: self, action: #selector(shareTapped))
+        
+        homeView.btnCheckout.addTarget(self, action: #selector(checkoutClicked) , for: .touchUpInside)
         
         setupTableViewDelegate()
         setupDelegate()
@@ -35,10 +35,26 @@ class HomeViewController: UIViewController, HomeViewModelProtocol {
         homeViewModel.fetchAllData()
     }
     
-    @objc func addTapped(){
+    @objc func shareTapped(){
     }
     
-    func didReceiveData() {
+    @objc func checkoutClicked(){
+        
+        let alert = UIAlertController(title: "Alert", message: "Please add address", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style:.default))
+        self.present(alert, animated: true, completion: nil)
+    }
+
+}
+
+// MARK: - HomeViewModel Methods
+
+extension HomeViewController:HomeViewModelDelegate {
+    
+    func didReceiveData(cartInfo:Cart) {
+        
+        homeView.lblFreeShipping.text = cartInfo.offer?.attributedHtmlString?.string
+        homeView.lblCheckout.text = cartInfo.total
         
     }
     
@@ -54,11 +70,14 @@ class HomeViewController: UIViewController, HomeViewModelProtocol {
         homeView.collectionSuggestion.reloadData()
     }
     
-    func didFailToGetData() {
+    func didFailToGetData(message:String) {
         
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style:.default))
+        self.present(alert, animated: true, completion: nil)
     }
-    
 }
+
 
 // MARK: - UITableView Methods
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource,CartCellDelegate {
