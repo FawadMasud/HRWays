@@ -120,7 +120,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource,CartCel
  //MARK: - CollectionView Methods
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,SuggestionCellDelegate {
     
-    
     private func setupDelegate() {
         homeView.collectionSuggestion.delegate = self
         homeView.collectionSuggestion.dataSource = self
