@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Localize_Swift
+import MOLH
 
 class TabbarController: UITabBarController {
 
@@ -17,6 +19,7 @@ class TabbarController: UITabBarController {
         
         self.tabBar.isUserInteractionEnabled = true
         self.tabBar.tintColor = .black
+        
     }
     
 
@@ -34,7 +37,7 @@ class TabbarController: UITabBarController {
 
     private func homeViewController() -> UINavigationController {
         let homeVC = HomeViewController()
-        homeVC.tabBarItem = UITabBarItem(title: "Home",
+        homeVC.tabBarItem = UITabBarItem(title: "Home".localized(),
                                          image: UIImage(systemName: "house"),
                                          selectedImage: UIImage(systemName: "house.fill"))
         return UINavigationController(rootViewController: homeVC)
@@ -42,7 +45,7 @@ class TabbarController: UITabBarController {
     
     private func productViewController() -> UINavigationController {
         let productVC = ProductViewController()
-        productVC.tabBarItem = UITabBarItem(title: "Products",
+        productVC.tabBarItem = UITabBarItem(title: "Products".localized(),
                                                 image: UIImage(systemName: "list.bullet"),
                                                 selectedImage: UIImage(systemName: "list.bullet"))
         return UINavigationController(rootViewController: productVC)
@@ -50,7 +53,7 @@ class TabbarController: UITabBarController {
     
     private func brandsViewController() -> UINavigationController {
         let tagsVC = TagsViewController()
-        tagsVC.tabBarItem = UITabBarItem(title: "Brands",
+        tagsVC.tabBarItem = UITabBarItem(title: "Brands".localized(),
                                          image: UIImage(systemName: "tag"),
                                          selectedImage: UIImage(systemName: "tag.fill" ))
         return UINavigationController(rootViewController: tagsVC)
@@ -58,7 +61,7 @@ class TabbarController: UITabBarController {
     
     private func cartViewController() -> UINavigationController {
         let cartVC = CartViewController()
-        cartVC.tabBarItem = UITabBarItem(title: "Purse",
+        cartVC.tabBarItem = UITabBarItem(title: "Purse".localized(),
                                          image: UIImage(systemName: "bag"),
                                          selectedImage: UIImage(systemName: "bag.fill" ))
         return UINavigationController(rootViewController: cartVC)
@@ -66,7 +69,7 @@ class TabbarController: UITabBarController {
     
     private func profileViewController() -> UINavigationController {
         let profileVC = ProfileViewController()
-        profileVC.tabBarItem = UITabBarItem(title: "Profile",
+        profileVC.tabBarItem = UITabBarItem(title: "Profile".localized(),
                                             image: UIImage(systemName: "person" ),
                                             selectedImage: UIImage(systemName: "person.fill"))
         return UINavigationController(rootViewController: profileVC)

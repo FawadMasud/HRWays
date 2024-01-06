@@ -8,6 +8,9 @@ target 'NiceOne' do
 pod 'SnapKit'
 pod 'GradientProgressBar'
 pod 'SDWebImage'
+pod 'MOLH'
+pod 'Localize-Swift'
+
   # Pods for NiceOne
 
   target 'NiceOneTests' do

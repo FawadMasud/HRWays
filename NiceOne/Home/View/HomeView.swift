@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import GradientProgressBar
+import Localize_Swift
 
 class HomeView: UIView {
 
@@ -84,7 +85,7 @@ class HomeView: UIView {
         customView.isUserInteractionEnabled = true
         tblCart.isUserInteractionEnabled = true
         
-        lblLike.text = "Products you may like"
+        lblLike.text = "Products you may like".localized()
         lblLike.font = .Regular_14
         
         collectionSuggestion.clipsToBounds = true
@@ -93,7 +94,7 @@ class HomeView: UIView {
         
         btnCheckout.backgroundColor = .black
         btnCheckout.cornerRadius = 5
-        btnCheckout.setTitle("Select the delivery address", for: .normal)
+        btnCheckout.setTitle("Select the delivery address".localized(), for: .normal)
         
         
         lblCheckout.text = "4 Products - SAR 549"

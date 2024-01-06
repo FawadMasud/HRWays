@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class ProfileViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         view = profileView
-        self.title = "Profile"
+        self.title = "Profile".localized()
     }
     
     

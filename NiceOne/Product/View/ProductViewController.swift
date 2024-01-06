@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class ProductViewController: UIViewController {
 
@@ -14,7 +15,7 @@ class ProductViewController: UIViewController {
         super.viewDidLoad()
 
         view = productView
-        title = "Products"
+        title = "Products".localized()
     }
     
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class CartViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class CartViewController: UIViewController {
         super.viewDidLoad()
 
         view = cartView
-        self.title = "Purse"
+        self.title = "Purse".localized()
     }
 
 

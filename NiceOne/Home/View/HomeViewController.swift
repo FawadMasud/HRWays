@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MOLH
+import Localize_Swift
 
 class HomeViewController: UIViewController {
 
@@ -20,9 +22,12 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         view = homeView
-        self.title = "Home"
+        self.title = "Home".localized()
         view.isUserInteractionEnabled = true
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.init(named: "share"), style: .plain, target: self, action: #selector(shareTapped))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Language".localized(), style: .plain, target: self, action: #selector(languageTapped))
         
         homeView.btnCheckout.addTarget(self, action: #selector(checkoutClicked) , for: .touchUpInside)
         
@@ -36,6 +41,26 @@ class HomeViewController: UIViewController {
     }
     
     @objc func shareTapped(){
+        
+    }
+    
+    @objc func languageTapped(){
+        
+        let alert = UIAlertController(title: "Language".localized(), message: "Please select language".localized(), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "English".localized(), style: .default, handler: {_ in
+            MOLH.setLanguageTo("en")
+            Localize.setCurrentLanguage("en")
+            UserDefaults.standard.setValue("en", forKey: LANGUAGE)
+            self.reloadApp()
+        }))
+        alert.addAction(UIAlertAction(title: "Arabic".localized(), style: .default, handler: {_ in
+            MOLH.setLanguageTo("ar")
+            Localize.setCurrentLanguage("ar")
+            UserDefaults.standard.setValue("ar", forKey: LANGUAGE)
+            self.reloadApp()
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc func checkoutClicked(){
@@ -45,6 +70,13 @@ class HomeViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
+    func reloadApp(){
+        
+        let sceneDelegate = UIApplication.shared.connectedScenes
+                .first!.delegate as! SceneDelegate
+        let tabBar = TabbarController()
+        sceneDelegate.window?.rootViewController = tabBar
+    }
 }
 
 // MARK: - HomeViewModel Methods
@@ -65,6 +97,7 @@ extension HomeViewController:HomeViewModelDelegate {
     }
     
     func didReceiveRecommendedProducts(products: [Products]) {
+        
         
         recommended = products
         homeView.collectionSuggestion.reloadData()

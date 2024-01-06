@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class TagsViewController: UIViewController {
 
@@ -14,7 +15,7 @@ class TagsViewController: UIViewController {
         super.viewDidLoad()
 
         view = tagView
-        title = "Brands"
+        title = "Brands".localized()
     }
     
 }
