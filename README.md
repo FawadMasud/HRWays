@@ -5,4 +5,5 @@ SnapKit for UI,
 GradientProgressBar for color gradient in progress bar
 SDWebImage for image caching
 MOLH and Localize-Swift for arabic localization
+
 Run 'pod install' from terminal to install dependencies. After that open project from workspace. Minimum deployment target is iOS 15.0.
